@@ -14,7 +14,7 @@ namespace Lab7
             while(run == true)
             {
                 Console.WriteLine("Welcome to our C# Class. Which student would you like to learn more about?");
-                Console.WriteLine(" Please enter a number between 1 and 11");
+                Console.WriteLine("Please enter a number between 1 and 11");
                 Console.WriteLine();
                 var userResponse = Console.ReadLine();
                 //Checking if User responded with a Valid input
@@ -38,6 +38,7 @@ namespace Lab7
         {
             List<Student> studentList = new List<Student>();
 
+            studentList.Add(new Student("Tanvi", "Sathe", "India", "Biryani"));
             studentList.Add(new Student("Molly", "Guthrie", "RockFord, MI", "Noodles"));
             studentList.Add(new Student("Michelle", "Polo", "Ecuador", "Spaghetti"));
             studentList.Add(new Student("Rebecca", "Allard", "Charlevoix,MI", "Pizza"));
@@ -48,7 +49,7 @@ namespace Lab7
             studentList.Add(new Student("Tommy", "Waalkes", "Raleigh,NC", "Indian Red Curries"));
             studentList.Add(new Student("Lisa", "Dewey", "Los Angeles,CA", "Mushroom Masala Dosa"));
             studentList.Add(new Student("Jonaca", "Hudson", "Lansing,MI", "Sushi"));
-            studentList.Add(new Student("Tanvi", "Sathe", "India", "Chicken Biryani"));
+            
 
             return studentList;
         }
@@ -73,7 +74,7 @@ namespace Lab7
             }
             else if(request.ToLower() == "n")
             {
-                Console.WriteLine("Bye Bye! We are sad to see you go!");
+                Console.WriteLine("Bye Bye! We are sad to see you leave!");
                 
             }
             else
